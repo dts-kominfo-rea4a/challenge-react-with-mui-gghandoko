@@ -56,7 +56,6 @@ const Contact = ({ data }) => {
                                     </React.Fragment>
                                 }
                             />
-                       
 
                         </ListItem>
 
@@ -65,56 +64,10 @@ const Contact = ({ data }) => {
                     
                 })
                 }
-                
-                {/* <ListItem alignItems="flex-start">
-                    <ListItemAvatar>
-                    <Avatar alt="Travis Howard" src="https://avatars3.githubusercontent.com/u/8424863?s=256" />
-                    </ListItemAvatar>
-                    <ListItemText
-                    primary="Summer BBQ"
-                    secondary={
-                        <React.Fragment>
-                        <Typography
-                            component="span"
-                            variant="body2"
-                            className={classes.inline}
-                            color="textPrimary"
-                        >
-                            to Scott, Alex, Jennifer
-                        </Typography>
-                        <Typography>Emails</Typography>
-                        </React.Fragment>
-                    }
-                    />
-                </ListItem>
-                <Divider variant="inset" component="li" /> */}
-                {/* <ListItem alignItems="flex-start">
-                    <ListItemAvatar>
-                    <Avatar alt="Cindy Baker" src="https://avatars3.githubusercontent.com/u/8424863?s=256" />
-                    </ListItemAvatar>
-                    <ListItemText
-                    primary="Oui Oui"
-                    secondary={
-                        <React.Fragment>
-                        <Typography
-                            component="span"
-                            variant="body2"
-                            className={classes.inline}
-                            color="textPrimary"
-                        >
-                            Sandra Adams
-                        </Typography>
-                            <Typography>
-                                Email
-                        </Typography>
-                        </React.Fragment>
-                    }
-                    />
-                </ListItem> */}
+               
             </List>
     
         </>
-        // );
     );
 };
 
