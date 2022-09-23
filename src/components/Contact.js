@@ -26,8 +26,7 @@ const useStyles = makeStyles((theme) => ({
 // Kalian bisa membuat CSS sendiri di src/components/Contact.css
 // atau langsung tambahkan dengan sx={{}}
 const Contact = ({ data }) => {
-    console.log("mydata");
-    console.log(data);
+   
     const classes = useStyles();
     // Contact berisi foto, nama, telepon, dan email
     
@@ -36,7 +35,7 @@ const Contact = ({ data }) => {
             <List className={classes.root}>
                 {data.map(itemContact => {
                     return (
-                        // <h2>asdsadasd</h2>
+                       
                         <ListItem alignItems="flex-start" key={itemContact.name}>
                             <ListItemAvatar>
                                 <Avatar alt="Remy Sharp" src={itemContact.photo} />
@@ -57,7 +56,7 @@ const Contact = ({ data }) => {
                                     </React.Fragment>
                                 }
                             />
-                        {/* <Divider variant="inset" component="li" /> */}
+                       
 
                         </ListItem>
 
