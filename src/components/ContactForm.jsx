@@ -12,14 +12,14 @@ import Typography from '@mui/material/Typography';
 import { TextField } from '@material-ui/core';
 import { textAlign } from '@mui/system';
 
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-  >
+// const bull = (
+//   <Box
+//     component="span"
+//     sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+//   >
     
-  </Box>
-);
+//   </Box>
+// );
 
 
 const ContactForm = ({ fnAddContact }) => {
@@ -121,7 +121,7 @@ const ContactForm = ({ fnAddContact }) => {
                     
                     
                     <CardActions>
-                        <Button type='submit' size="small">ADD CONTACT</Button>
+                        <Button type='submit' size="small">ADD NEW</Button>
                     </CardActions>
                 </form>
             </Card>
