@@ -11,6 +11,9 @@ import ListItemText from "@material-ui/core/ListItemText";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import Avatar from "@material-ui/core/Avatar";
 import Typography from "@material-ui/core/Typography";
+// import ImageList from '@material-ui/core';
+import { ImageList }  from '@mui/material';
+import { ImageListItem } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,14 +35,19 @@ const Contact = ({ data }) => {
     
     return (
         <>
-            <List className={classes.root}>
+            <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
                 {data.map(itemContact => {
                     return (
-                       
                         <ListItem alignItems="flex-start" key={itemContact.name}>
-                            <ListItemAvatar>
-                                <Avatar alt="Remy Sharp" src={itemContact.photo} />
-                            </ListItemAvatar>
+                            <ImageList sx={{ width: 100, height: 100 }}>
+                                    <ImageListItem >
+                                        <img 
+                                                src={itemContact.photo}
+                                            />
+                                    </ImageListItem>
+                                
+                            </ImageList>
+
                             <ListItemText
                                 primary={itemContact.name}
                                 secondary={
@@ -56,17 +64,11 @@ const Contact = ({ data }) => {
                                     </React.Fragment>
                                 }
                             />
-
                         </ListItem>
-
-                        
                     );
-                    
-                })
                 }
-               
+                )}
             </List>
-    
         </>
     );
 };
