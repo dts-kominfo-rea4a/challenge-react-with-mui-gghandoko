@@ -9,6 +9,11 @@ import { Typography } from '@mui/material';
 const Header = () => {
   return (
     <>
+      <head>
+        <title>
+           Contact App
+        </title>
+      </head>
       
       <Typography variant='title'>
         Call a Friend
